@@ -1,0 +1,286 @@
+/* load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+
+/* ------- General ------- */
+* {
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2.5em; /* 40px */ 
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+/* ====================== */ 
+
+
+/* ------- Navigation ------- */
+div.banner p {
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px; /* want the size to be fixed */ 
+    padding: 5px 0;
+}
+
+div.banner {
+    background-color: #B7875D;
+    height: 40px;
+}
+
+div.nav-bar {
+    margin: 0 2%;
+    margin-top: 1%;
+}
+
+p.logo a {
+    font-family: Oregano, monospace;
+    font-size: 2.5em; /* 40px */ 
+    display: inline;
+    float: left;
+    color: #FFFFFF;
+}
+
+nav:not([main-pg]) p.logo a {
+    color: #000000;
+}
+
+div.nav-bar li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.4em; /* 25px */ 
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+div.nav-bar a {
+    color: #FFFFFF;
+}
+
+nav:not([main-pg]) div.nav-bar a {
+    color: #000000;
+}
+
+div.nav-bar ul {
+    text-align: right;
+}
+/* ====================== */ 
+
+
+/* ------- Hero ------- */
+div.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.hero {
+    position: relative;
+    top: -80px;
+    z-index: -1; /* background */ 
+    margin-bottom: -70px;
+}
+
+div.welcome-msg {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+div.welcome-msg h1 {
+    text-transform: uppercase;
+    font-size: 3.75em; /* 60px */ 
+    font-weight: 500;
+    margin-bottom: 3%;
+    color: #FFFFFF;
+}
+
+div.welcome-msg button {
+    text-transform: uppercase;
+    font-size: 1.5625em; /* 25px */ 
+    font-weight: 500;
+    padding: 1% 4%;
+    border: none;
+    background-color: #B7875D;
+}
+
+div.welcome-msg button a {
+    color: #FFFFFF;
+}
+/* ====================== */ 
+
+
+/* ------- Monthly Favorite ------- */
+div.monthly-fav {
+    margin: 8% 13%;
+    display: flex;
+}
+
+div.monthly-fav img {
+    max-width: 50%;
+    height: auto;
+}
+
+div.monthly-desc {
+    margin: 3% 6%;
+}
+
+div.monthly-desc p {
+    font-size: 1.4em; /* 24px */ 
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+div.monthly-desc button {
+    text-transform: uppercase;
+    font-size: 1.5625em; /* 25px */ 
+    font-weight: 500;
+    padding: 3% 11%;
+    border: none;
+    background-color: #B7875D;
+}
+
+div.monthly-desc button a {
+    color: #FFFFFF;
+}
+/* ====================== */ 
+
+
+/* ------- Monthly Favorite ------- */
+div.logistic {
+    background-color: #FFF8E7;
+    padding: 1% 13%;
+    padding-bottom: 4%;
+    height: 230px;
+}
+
+div.order-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.order-steps i {
+    font-size: 4.2em;
+    margin-bottom: 13%;
+}
+
+div.order-steps p {
+    font-size: 1.4em; /* 24px */ 
+    font-weight: 300;
+}
+
+div.order-steps div {
+    text-align: center;
+}
+
+div.order-steps div#step1 {
+    position: absolute;
+    left: 13%;
+}
+
+div.order-steps div#step2 {
+    position: absolute;
+    left: 45%;
+}
+
+div.order-steps div#step3 {
+    position: absolute;
+    right: 13%;
+}
+/* ====================== */ 
+
+
+/* ------- Footer ------- */
+footer {
+    margin-top: 7%;
+    background-color: #B7875D;
+    padding: 2% 13%;
+}
+
+footer li {
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.4em; /* 25px */ 
+    font-weight: 500;
+    margin-right: 2%;
+    color: #FFFFFF;
+}
+
+footer i {
+    font-size: 1.5em; /* 25px */ 
+}
+
+ul.footer-tabs li {
+    margin-bottom: 5px;
+}
+
+ul.footer-tabs {
+    display: inline-block;
+    width: 200px;
+}
+
+ul.social-media {
+    display: inline;
+    overflow: auto;
+}
+
+ul.social-media li {
+    float: right;
+}
+
+ul.footer-tabs a {
+    color: #FFFFFF;
+}
+/* ====================== */ 
+
+
+/* ------- Menu ------- */
+div.browsing {
+    margin: 0 13%;
+    margin-top: 3.4%;
+}
+
+div.view-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 5%;
+}
+
+div.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.item {
+    text-align: center;
+}
+
+h3.title {
+    text-transform: uppercase;
+    font-size: 1.25em; /* 20px */ 
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+p.price {
+    text-transform: capitalize;
+    font-size: 1em; /* 16px */ 
+    font-weight: 300;
+}
+
+h3.title a:hover {
+    color: #B7875D;
+}
