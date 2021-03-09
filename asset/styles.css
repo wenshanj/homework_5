@@ -21,7 +21,7 @@ h2 {
     font-weight: 500;
     margin-bottom: 4%;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
 /* ------- Navigation ------- */
@@ -75,7 +75,7 @@ nav:not([main-pg]) div.nav-bar a {
 div.nav-bar ul {
     text-align: right;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
 /* ------- Hero ------- */
@@ -113,22 +113,27 @@ div.welcome-msg button {
     padding: 1% 4%;
     border: none;
     background-color: #B7875D;
+    outline: none;
+    cursor: pointer;
 }
 
 div.welcome-msg button a {
     color: #FFFFFF;
+    outline: none;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
 /* ------- Monthly Favorite ------- */
 div.monthly-fav {
     margin: 8% 13%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8%;
 }
 
 div.monthly-fav img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -148,16 +153,18 @@ div.monthly-desc button {
     font-weight: 500;
     padding: 3% 11%;
     border: none;
+    outline: none;
     background-color: #B7875D;
 }
 
 div.monthly-desc button a {
     color: #FFFFFF;
+    outline: none;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
-/* ------- Monthly Favorite ------- */
+/* ------- Order Steps ------- */
 div.logistic {
     background-color: #FFF8E7;
     padding: 1% 13%;
@@ -198,7 +205,7 @@ div.order-steps div#step3 {
     position: absolute;
     right: 13%;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
 /* ------- Footer ------- */
@@ -206,6 +213,7 @@ footer {
     margin-top: 7%;
     background-color: #B7875D;
     padding: 2% 13%;
+    padding-right: 11.5%
 }
 
 footer li {
@@ -242,7 +250,7 @@ ul.social-media li {
 ul.footer-tabs a {
     color: #FFFFFF;
 }
-/* ====================== */ 
+/* ============================================ */ 
 
 
 /* ------- Menu ------- */
@@ -284,3 +292,149 @@ p.price {
 h3.title a:hover {
     color: #B7875D;
 }
+/* ============================================ */ 
+
+
+/* ------- Individual Item ------- */
+div.selection {
+    margin: 3.4% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 13%;
+}
+
+div.selection img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.customize {
+    margin: 6.8% 10.2%;
+    margin-right: 0;
+}
+
+div.customize h2 {
+    font-size: 3.125em; /* 50px */ 
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 2%;
+}
+
+div.customize .selection-label {
+    font-size: 1em; /* 16px */ 
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2%;
+}
+
+p.glaze-option {
+    display: inline-block;
+    border: 2px #000000 solid;
+    font-size: .875em; /* 14px */ 
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6% 0;
+    margin-top: -2px;   /* get rid of double borders */
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+p.glaze-option:hover {
+    color: #B7875D;
+    border: 2px #B7875D solid;
+    z-index: 2;
+}
+
+div.glaze-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+label.quantity {
+    margin-top: 3.4%;
+}
+
+button.add-to-cart {
+    display: block;
+    margin-top: 17%;
+    text-transform: uppercase;
+    font-size: 1.375em; /* 22px */ 
+    font-weight: 500;
+    padding: 1% 4%;
+    border: none;
+    background-color: #B7875D;
+    width: 100%;
+    padding: 2% 0;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+p.rating {
+    text-transform: uppercase;
+    margin-bottom: 6%;
+}
+
+p span.review-divider {
+    padding-right: 1%;
+}
+
+p.rating i.fas {
+    color: #B7875D;
+}
+/* ============================================ */ 
+
+
+/* ------- About Us ------- */
+div.about {
+    margin: 6% 13%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+div.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.about-bio h2 {
+    font-weight: 600;
+    font-size: 2.5em; /* 40px */
+    margin-bottom: 6.8%;
+}
+
+div.about-bio p {
+    font-weight: 300;
+    font-size: 1.5em; /* 24px */
+}
+/* ====================== */ 
+
+
+/* ------- Contact Us ------- */
+div.contact-us{
+    margin: 6% 13%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+div.contact-us iframe {
+    width: 100%;
+    height: 580px;
+    border: 0;
+}
+
+div.contact-us h2 {
+    font-weight: 600;
+    font-size: 2.5em; /* 40px */
+    margin-bottom: 6.8%;
+}
+
+div.contact-us p {
+    font-weight: 300;
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 3.4%;
+}
+/* ============================================ */ 
